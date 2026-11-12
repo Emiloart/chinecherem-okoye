@@ -3,11 +3,11 @@
 :root {
   --cream: #f7f4ec;
   --cream-deep: #ece7dc;
-  --navy: #123d70;
-  --navy-deep: #0c2d53;
-  --blue: #2468a6;
-  --blue-mid: #397fb8;
-  --blue-soft: #e1edf6;
+  --navy: #145da0;
+  --navy-deep: #103b68;
+  --blue: #176fba;
+  --blue-mid: #3988c7;
+  --blue-soft: #e4eff8;
   --white: #ffffff;
   --ink: #1b2d40;
   --muted: #667788;
@@ -16,7 +16,7 @@
 
 * { box-sizing: border-box; }
 html { scroll-behavior: smooth; }
-body { margin: 0; background: var(--cream); color: var(--ink); font-family: 'DM Sans', sans-serif; -webkit-font-smoothing: antialiased; }
+body { margin: 0; background: var(--cream); color: var(--ink); font-family: 'Manrope', sans-serif; -webkit-font-smoothing: antialiased; }
 a { color: inherit; text-decoration: none; }
 button, a { -webkit-tap-highlight-color: transparent; }
 button { font: inherit; }
@@ -27,7 +27,7 @@ button { font: inherit; }
 .wordmark { display: inline-flex; align-items: center; gap: 11px; }
 .wordmark-mark { position: relative; flex: 0 0 auto; width: 38px; height: 38px; display: block; overflow: hidden; border: 1px solid rgba(18,61,112,.2); border-radius: 50%; background: var(--blue-soft); }
 .wordmark-mark img { object-fit: cover; object-position: center 24%; }
-.wordmark-name { color: var(--navy); font-family: 'Manrope', sans-serif; font-size: 10px; font-weight: 800; letter-spacing: .7px; }
+.wordmark-name { color: var(--navy); font-family: 'Manrope', sans-serif; font-size: 10px; font-weight: 800; letter-spacing: .45px; }
 .desktop-nav { display: flex; align-items: center; gap: 32px; }
 .desktop-nav a { color: #4e6276; font-size: 12px; font-weight: 500; transition: color .2s; }
 .desktop-nav a:hover, .text-link:hover { color: var(--blue); }
@@ -35,10 +35,10 @@ button { font: inherit; }
 .header-contact:hover { background: var(--navy); color: white; }
 
 .hero { min-height: 620px; padding-top: 76px; padding-bottom: 76px; display: grid; grid-template-columns: 1.08fr .92fr; align-items: center; gap: 76px; }
-.hero-role, .section-kicker { margin: 0 0 17px; color: var(--blue); font-family: 'Manrope', sans-serif; font-size: 11px; font-weight: 800; letter-spacing: .9px; text-transform: uppercase; }
+.hero-role, .section-kicker { margin: 0 0 17px; color: var(--blue); font-family: 'Manrope', sans-serif; font-size: 10px; font-weight: 800; letter-spacing: .75px; text-transform: uppercase; }
 .hero h1 { margin: 0; color: var(--navy); font-family: 'Playfair Display', serif; font-size: clamp(54px, 6.1vw, 78px); font-weight: 500; line-height: 1.08; letter-spacing: -1.8px; }
 .hero h1 em { color: var(--blue); font-weight: 500; }
-.hero-intro { max-width: 520px; margin: 24px 0 28px; color: #4f6172; font-size: 15px; line-height: 1.8; }
+.hero-intro { max-width: 520px; margin: 24px 0 28px; color: #4f6172; font-size: 15px; line-height: 1.85; }
 .hero-actions { display: flex; align-items: center; gap: 24px; }
 .button { display: inline-flex; align-items: center; justify-content: center; gap: 12px; min-height: 48px; padding: 0 19px; font-size: 12px; font-weight: 700; }
 .button-primary { background: var(--navy); color: white; transition: background .2s, transform .2s; }
@@ -48,10 +48,10 @@ button { font: inherit; }
 .hero-meta span { display: inline-flex; align-items: center; gap: 7px; }
 .hero-meta svg { color: var(--blue); }
 .portrait-column { width: min(100%, 430px); justify-self: end; }
-.portrait-frame { padding: 12px; background: var(--white); border: 1px solid rgba(18,61,112,.13); box-shadow: 0 16px 42px rgba(18,61,112,.08); }
+.portrait-frame { padding: 12px; background: var(--white); border: 1px solid rgba(18,61,112,.13); box-shadow: 0 12px 30px rgba(18,61,112,.07); }
 .portrait-image-wrap { aspect-ratio: 4 / 4.6; position: relative; overflow: hidden; background: #e8e9e7; }
 .portrait-image { object-fit: cover; object-position: center 22%; }
-.portrait-caption { display: flex; flex-wrap: wrap; justify-content: space-between; gap: 8px; padding: 14px 3px 2px; color: #64778a; font-family: 'Manrope', sans-serif; font-size: 8px; font-weight: 800; letter-spacing: .55px; }
+.portrait-caption { display: flex; flex-wrap: wrap; justify-content: space-between; gap: 8px; padding: 14px 3px 2px; color: #64778a; font-family: 'Manrope', sans-serif; font-size: 8px; font-weight: 800; letter-spacing: .35px; }
 
 .intro-band { padding: 76px 0 80px; background: var(--navy); color: white; }
 .intro-grid { display: grid; grid-template-columns: .9fr 1.1fr; gap: 90px; align-items: center; }
@@ -60,11 +60,11 @@ button { font: inherit; }
 .intro-text p { margin: 0 0 14px; color: #e0eaf3; font-size: 14px; line-height: 1.85; }
 .intro-text p:last-child { margin-bottom: 0; }
 
-.expertise-section { padding-top: 82px; padding-bottom: 88px; }
+.expertise-section { padding-top: 70px; padding-bottom: 76px; }
 .section-heading { display: flex; justify-content: space-between; align-items: end; gap: 40px; margin-bottom: 34px; }
 .section-heading .section-kicker { margin-bottom: 12px; }
 .section-heading h2, .education-copy h2 { margin: 0; color: var(--navy); font-family: 'Playfair Display', serif; font-size: clamp(34px, 3.8vw, 46px); font-weight: 500; letter-spacing: -.6px; }
-.section-aside { max-width: 330px; margin: 0 0 5px; color: #647587; font-size: 12px; line-height: 1.75; }
+.section-aside { max-width: 330px; margin: 0 0 5px; color: #647587; font-size: 13px; line-height: 1.75; }
 .practice-feature { display: flex; align-items: end; justify-content: space-between; gap: 35px; padding: 29px 34px; margin-bottom: 36px; background: var(--blue-soft); border-left: 4px solid var(--blue); }
 .feature-label { color: var(--blue); font-family: 'Manrope', sans-serif; font-size: 10px; font-weight: 800; letter-spacing: .8px; }
 .practice-feature h3 { margin: 9px 0 0; color: var(--navy); font-family: 'Playfair Display', serif; font-size: 29px; font-weight: 500; line-height: 1.18; }
@@ -82,7 +82,7 @@ button { font: inherit; }
 .carousel-card-rule { width: 30px; height: 3px; background: var(--blue); }
 .carousel-card p { margin: 19px 0 0; color: #344e68; font-size: 13px; font-weight: 600; line-height: 1.55; }
 
-.experience-section { padding: 82px 0 90px; background: var(--navy-deep); color: white; }
+.experience-section { padding: 72px 0 78px; background: var(--navy-deep); color: white; }
 .experience-heading { margin-bottom: 34px; }
 .experience-section h2 { font-size: clamp(35px, 4vw, 47px); }
 .section-kicker-light { color: #b8d5ec; }
