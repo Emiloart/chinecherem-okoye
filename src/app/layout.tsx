@@ -5,7 +5,6 @@ export const metadata: Metadata = {
   title: "Okoye Melody Chinecherem | Medical Laboratory Technician",
   description:
     "Professional portfolio of Okoye Melody Chinecherem, Medical Laboratory Technician based in Lagos, Nigeria.",
-  metadataBase: new URL("https://example.com"),
   openGraph: {
     title: "Okoye Melody Chinecherem | Medical Laboratory Technician",
     description:
