@@ -23,7 +23,7 @@ button, a { -webkit-tap-highlight-color: transparent; }
 
 .site-header { height: 82px; padding: 0 max(32px, calc((100vw - 1160px) / 2)); display: flex; align-items: center; justify-content: space-between; border-bottom: 1px solid var(--line); background: var(--cream); }
 .wordmark { display: inline-flex; align-items: center; gap: 11px; }
-.wordmark-mark { width: 34px; height: 34px; display: grid; place-items: center; background: var(--navy); color: white; font-family: 'Playfair Display', serif; font-size: 13px; letter-spacing: -.5px; }
+.wordmark-mark { position: relative; flex: 0 0 auto; width: 36px; height: 36px; display: block; overflow: hidden; border: 1px solid rgba(23,57,95,.2); border-radius: 50%; background: var(--blue-soft); }\n.wordmark-mark img { object-fit: cover; object-position: center 24%; }
 .wordmark-name { color: var(--navy); font-size: 10px; font-weight: 700; letter-spacing: 1.25px; }
 .desktop-nav { display: flex; align-items: center; gap: 34px; }
 .desktop-nav a { color: #536273; font-size: 12px; transition: color .2s; }
@@ -50,7 +50,7 @@ button, a { -webkit-tap-highlight-color: transparent; }
 .portrait-frame { padding: 15px; background: var(--white); border: 1px solid rgba(23,57,95,.13); box-shadow: 0 22px 65px rgba(23,57,95,.08); transform: rotate(1.2deg); }
 .portrait-topline, .portrait-caption { display: flex; justify-content: space-between; color: #82909a; font-size: 8px; font-weight: 700; letter-spacing: 1.2px; }
 .portrait-topline { padding: 2px 2px 13px; }
-.portrait-placeholder { min-height: 365px; position: relative; display: flex; flex-direction: column; justify-content: center; align-items: center; overflow: hidden; background: linear-gradient(145deg, #e6edf0, #d9e1e4 55%, #e9e5db); border: 1px dashed rgba(23,57,95,.35); color: var(--navy); }
+.portrait-image-wrap { min-height: 365px; position: relative; overflow: hidden; background: #e8e9e7; }\n.portrait-image { object-fit: cover; object-position: center 22%; }
 .portrait-placeholder:before, .portrait-placeholder:after { content: ""; position: absolute; width: 240px; height: 240px; border: 1px solid rgba(23,57,95,.13); border-radius: 50%; }
 .portrait-placeholder:after { width: 300px; height: 300px; }
 .portrait-initials { z-index: 1; font-family: 'Playfair Display', serif; font-size: 76px; color: rgba(23,57,95,.78); }
@@ -146,14 +146,14 @@ button, a { -webkit-tap-highlight-color: transparent; }
 .contact-details a, .contact-details span { display: inline-flex; align-items: center; gap: 10px; color: #526473; font-size: 11px; }
 .contact-details svg { color: var(--blue); }
 .footer-bottom { min-height: 77px; display: flex; align-items: center; justify-content: space-between; gap: 20px; border-top: 1px solid var(--line); color: #879198; font-size: 9px; }
-.footer-wordmark .wordmark-mark { width: 29px; height: 29px; font-size: 11px; }
+.footer-wordmark .wordmark-mark { width: 32px; height: 32px; }
 .footer-wordmark .wordmark-name { font-size: 8px; }
 .footer-bottom > a:last-child { color: var(--navy); font-weight: 600; }
 
 @media (max-width: 900px) {
   .hero { gap: 35px; }
   .portrait-column { max-width: 330px; }
-  .portrait-placeholder { min-height: 320px; }
+  .portrait-image-wrap { min-height: 320px; }
   .intro-grid { gap: 55px; }
   .skills-grid { grid-template-columns: repeat(3, 1fr); }
   .details-grid { gap: 28px; }
@@ -170,7 +170,7 @@ button, a { -webkit-tap-highlight-color: transparent; }
   .hero-meta { flex-wrap: wrap; gap: 11px; margin-top: 34px; }
   .hero-meta span:last-child { max-width: 230px; }
   .portrait-column { width: min(100%, 360px); justify-self: center; }
-  .portrait-placeholder { min-height: 330px; }
+  .portrait-image-wrap { min-height: 330px; }
   .scroll-cue { bottom: 20px; }
   .intro-band { padding: 70px 0; }
   .intro-grid { grid-template-columns: 1fr; gap: 12px; }
