@@ -1,3 +1,6 @@
+import Image from "next/image";
+import melodyPortrait from "./okoye_melody.png";
+
 import {
   ArrowDown,
   ArrowRight,
@@ -92,7 +95,7 @@ export default function Home() {
     <main>
       <header className="site-header">
         <a className="wordmark" href="#home" aria-label="Melody Chinecherem home">
-          <span className="wordmark-mark">MC</span>
+          <span className="wordmark-mark"><Image src={melodyPortrait} alt="" fill priority sizes="36px" /></span>
           <span className="wordmark-name">MELODY CHINECHEREM</span>
         </a>
         <nav className="desktop-nav" aria-label="Main navigation">
@@ -129,11 +132,8 @@ export default function Home() {
         <div className="portrait-column">
           <div className="portrait-frame">
             <div className="portrait-topline"><span>PROFILE</span><span>01 / 01</span></div>
-            <div className="portrait-placeholder">
-              <div className="portrait-initials">MC</div>
-              <div className="portrait-plus">+</div>
-              <p>PROFILE PHOTOGRAPH</p>
-              <span>Reserved space — add portrait here</span>
+            <div className="portrait-image-wrap">
+              <Image src={melodyPortrait} alt="Okoye Melody Chinecherem, Medical Laboratory Technician" fill priority sizes="(max-width: 680px) 90vw, 390px" className="portrait-image" />
             </div>
             <div className="portrait-caption">
               <span>OKOYE MELODY CHINECHEREM</span>
@@ -288,7 +288,7 @@ export default function Home() {
             <span><MapPin size={17} /> Lagos, Nigeria</span>
           </div>
           <div className="footer-bottom">
-            <a className="wordmark footer-wordmark" href="#home"><span className="wordmark-mark">MC</span><span className="wordmark-name">MELODY CHINECHEREM</span></a>
+            <a className="wordmark footer-wordmark" href="#home"><span className="wordmark-mark"><Image src={melodyPortrait} alt="" fill sizes="32px" /></span><span className="wordmark-name">MELODY CHINECHEREM</span></a>
             <span>© {new Date().getFullYear()} Okoye Melody Chinecherem</span>
             <a href="#home">Back to top ↑</a>
           </div>
