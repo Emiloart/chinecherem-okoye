@@ -143,14 +143,11 @@ export default function Home() {
       <section className="section-shell expertise-section" id="expertise">
         <div className="section-heading">
           <div>
-            <p className="section-kicker">Clinical practice</p>
             <h2>Laboratory expertise</h2>
           </div>
-          <p className="section-aside">Diagnostic work and practical skills developed through clinical and laboratory experience.</p>
         </div>
         <div className="practice-feature">
           <div>
-            <span className="feature-label">CORE APPROACH</span>
             <h3>From specimen<br />to documented result.</h3>
           </div>
           <p>Attention to identification, handling, testing, equipment care and accurate result records.</p>
@@ -170,7 +167,6 @@ export default function Home() {
         <div className="section-shell">
           <div className="section-heading experience-heading">
             <div>
-              <p className="section-kicker section-kicker-light">Career history</p>
               <h2>Professional experience</h2>
             </div>
             <p className="section-aside section-aside-light">Experience across medical centres and diagnostic laboratories.</p>
@@ -201,7 +197,6 @@ export default function Home() {
       <section className="section-shell education-section" id="education">
         <div className="education-icon"><GraduationCap size={25} strokeWidth={1.5} /></div>
         <div className="education-copy">
-          <p className="section-kicker">Education</p>
           <h2>National Diploma (ND)</h2>
           <p className="education-course">Medical Laboratory Technician</p>
           <p className="education-school">College of Health, Ezzangbo</p>
@@ -220,7 +215,6 @@ export default function Home() {
         <div className="section-shell">
           <div className="footer-top">
             <div>
-              <p className="section-kicker">Contact</p>
               <h2>Let’s connect.</h2>
               <p className="footer-intro">For professional enquiries and opportunities, reach out directly.</p>
             </div>
