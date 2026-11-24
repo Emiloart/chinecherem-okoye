@@ -5,6 +5,7 @@ import {
   ArrowRight,
   ArrowUpRight,
   GraduationCap,
+  Award,
   Mail,
   MapPin,
   Phone,
@@ -86,6 +87,7 @@ export default function Home() {
           <a href="#expertise">Expertise</a>
           <a href="#experience">Experience</a>
           <a href="#education">Education</a>
+          <a href="#training">Training</a>
         </nav>
         <a className="header-contact" href="#contact">Contact <ArrowUpRight size={15} /></a>
       </header>
@@ -200,6 +202,38 @@ export default function Home() {
           <h2>National Diploma (ND)</h2>
           <p className="education-course">Medical Laboratory Technician</p>
           <p className="education-school">College of Health, Ezzangbo</p>
+        </div>
+      </section>
+
+
+      <section className="section-shell certifications-section" id="training">
+        <div className="section-heading">
+          <div>
+            <h2>Certifications and professional training</h2>
+          </div>
+          <p className="section-aside">Additional training and professional development.</p>
+        </div>
+        <div className="certification-grid">
+          <a className="certification-card" href="https://drive.google.com/file/d/1id460zUQ3cj4hrSYki2p62pQ1ZsrgsVB/view?usp=drivesdk" target="_blank" rel="noreferrer">
+            <span className="certification-icon"><Award size={21} strokeWidth={1.6} /></span>
+            <span className="certification-title">Nursing Assistant</span>
+            <span className="certification-link">View certificate <ArrowUpRight size={15} /></span>
+          </a>
+          <a className="certification-card" href="https://drive.google.com/file/d/1DkrtCBfVUE8JDaAHK6OgJjEFmMIeayRW/view?usp=drivesdk" target="_blank" rel="noreferrer">
+            <span className="certification-icon"><Award size={21} strokeWidth={1.6} /></span>
+            <span className="certification-title">Advanced Care Professional Diploma Certification</span>
+            <span className="certification-link">View certificate <ArrowUpRight size={15} /></span>
+          </a>
+          <a className="certification-card" href="https://drive.google.com/file/d/14d69nuonBkfhVCF7Y-LoMqx7Np_ofuQj/view?usp=drivesdk" target="_blank" rel="noreferrer">
+            <span className="certification-icon"><Award size={21} strokeWidth={1.6} /></span>
+            <span className="certification-title">Dementia Care Certificate</span>
+            <span className="certification-link">View certificate <ArrowUpRight size={15} /></span>
+          </a>
+          <a className="certification-card" href="https://drive.google.com/file/d/1SxEwqz78teO9ffmUI7xA9qUnLnHt8vqr/view?usp=drivesdk" target="_blank" rel="noreferrer">
+            <span className="certification-icon"><Award size={21} strokeWidth={1.6} /></span>
+            <span className="certification-title">Phlebotomy Exceptional Training Completion Certificate</span>
+            <span className="certification-link">View certificate <ArrowUpRight size={15} /></span>
+          </a>
         </div>
       </section>
 
